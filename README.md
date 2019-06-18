@@ -21,13 +21,13 @@ La session datajournalisme se déroulera du lundi 17 juin au vendredi 21 juin 20
 | Mardi | Récupération / scraping | Méthodologie de recherche et type de sources | Web et PDF-scraping | Google spreadsheet, Tabula | à venir |
 | Mercredi | Nettoyage et traitement | Critères de nettoyage | Editorialiser ses calculs | OpenRefine, Google Spreadsheet | à venir |
 | Jeudi | Datavisualisation | Principes de datavisualisation | Choix des outils et des cas d'étude | Google Spreadsheet, Datawrapper, [selon besoins] | à venir |
-| Vendredi | Narration par la donnée | Mener un projet datajournalistique | Méthodologie générale de formation et cérémonie de cloture | HackMD, Github, Google spreadsheet, [selon besoin] | #N/A |
+| Vendredi | Narration par la donnée | Mener un projet datajournalistique | Méthodologie générale de formation et cérémonie de clôture | HackMD, Github, Google spreadsheet, [selon besoin] | #N/A |
 
 ------
 
 ## Supports
 
-### *en cours*
+Les slides de la première journée sont disponible sur la page [Datactivist.coop dédiée à la formation](https://datactivist.coop/mediaup_ddj2019/).
 
 
 ## Bases de données utilises

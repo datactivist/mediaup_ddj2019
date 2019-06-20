@@ -29,7 +29,7 @@ La session datajournalisme se déroulera du lundi 17 juin au vendredi 21 juin 20
 
 * Jour 1 : [introduction et data literacy](https://datactivist.coop/mediaup_ddj2019/1-intro_dataliteracy/)
 * Jour 2 : à venir
-* Jour 3 : à venir
+* Jour 3 : [nettoyage](https://datactivist.coop/mediaup_ddj2019/3-nettoyage/)
 * Jour 4 : à venir
 * Jour 5 : à venir
 

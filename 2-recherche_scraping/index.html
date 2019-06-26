@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Datajournalisme (2) Récupération</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Sylvain Lapoix, Datactivist" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Datajournalisme (2) Récupération
+### Sylvain Lapoix, Datactivist
+### MediaUp - Capjc, 17 au 21 juin 2019
+
+---
+
+
+layout: true
+  
+
+&lt;div class='my-footer'&gt;&lt;span&gt;MediaUp - DDJ - 18/06/2019&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
+
+---
+
+
+background-image: url("https://media.giphy.com/media/l2JdSx78cVNm0x8AM/giphy.gif")
+class: center, top, inverse
+
+# Récupérer les données
+
+---
+
+
+## Scraping
+Quand les données ne sont pas livrées sous formats tabulaires, vous pourrez les récupérer néanmoins via des méthodes de **scraping**, c'est-à-dire d'extraction de données.
+
+En pratique, les outils de scraping vont procéder par **reconnaissance de schéma** (*pattern recognition* pour se la péter) pour identifier les données qui vous intéressent dans un fichier.
+
+--
+
+Les trois outils que je vous propose utilisent trois méthodes différentes :
+* reconnaissance par schémas visuels ;
+* reconnaissance par la syntaxe ;
+* reconnaissance par la hiérarchie.
+
+---
+
+## PDF - scraping : Tabula
+Tabula est un logiciel spécialisé dans le scraping de tableau dans des fichiers PDF.
+
+Utilisé par de nombreux journalistes et activistes, il s’appuie sur la technologie OCR (optical character recognition, en anglais “reconnaissance optique de caractère”).
+
+C’est-à-dire qu’il “lit” l’image pour reconnaître la forme des tableaux et en récupérer le contenu.
+
+---
+
+### Tabula - installation
+
+Tabula est un logiciel développé en *Java*, un langage de programmation orienté objet sous licence GNU GPL (mais maintenu par Oracle).
+
+Pour faire fonctionner Tabula, vous avez d'abord besoin d'installer son "environnement d'exécution", JRE (pour Java Runtime Environment).
+
+Une fois installé JRE sur votre ordinateur, il vous suffit de télécharger Tabula sur son site officiel : https://tabula.technology/
+
+Une fois dézippé le logiciel (avec un outil capable de gérer les .zip, comme [7-zip](https://www.7-zip.org/), Tabula est prêt à être lancé via son icône.
+
+
+---
+
+### Tabula - extraction
+
+Quand vous lancez Tabula, un terminal s'ouvre. **NE LE FERMEZ SURTOUT PAS** à moins de vouloir fermer Tabula : ce terminal gère l'exécution du programme dans votre machine.
+
+Un onglet s'ouvre alors dans votre navigateur par défaut. S'il ne s'ouvre pas, rentrez l'adresse : 127.0.0.1:8080 (il s'agit de l'adresse locale d'exécution du programme).
+
+Vous pouvez ensuite importer un fichier et ouvrir l'interface. L'extraction se déroule en trois étapes :
+1. sélection à la souris des limites du ou des tableaux ;
+2. prévisualisation et choix de la méthode de lecture ;
+3. exportation ou copie dans le presse-papier.
+
+---
+
+### Tabula - fonctions complémentaires
+
+Tabula peut "détecter" les tableurs automatiquement. Une fonction très pratique mais un peu aléatoie (le moindre accro sur la mise en forme rend l'identification impossible).
+
+Une fois réalisée une sélection, il vous est possible de la "répéter", ce qui s'avère très pratique face à longs fichiers PDF plein de tableaux.
+
+Tabula garde en mémoire (son *buffer*) les versions importées des fichiers déjà chargés. La liste vous en est proposée au lancement.
+
+---
+
+### Tabula - limites
+
+Tabula a plusieurs limitations techniques :
+1. Tabula ne gère que les "PDF-text", autrement dit les PDF exportés depuis un fichier texte et encodés en texte. Les "PDF-image" (notamment les scans) étant encodés en binaire sont illisibles pour ce logiciel.
+2. la lecture de Tabula ne peut pas être corrigée ou améliorée manuellement. Vous aurez parfois à redresser ou nettoyer les données vous-mêmes dans le fichier exporté.
+
+---
+
+## Web-scraping : Google Spreadsheet
+
+Google Spreadsheet propose deux fonctions permettant d'extraire les tableaux de pages web :
+* **=importHTML()** : pour récuéprer les "tables HTML", c'est-à-dire les tableaux déjà codés tel quel en HTML ;
+* **=importXML()** : pour récupérer des données suivant leurs balises et leur hiérarchie (ou arborescence) dans la page.
+
+---
+
+## Aparté : les fonctions 1/2
+
+En informatique, **une fonction** est une formule utilisée pour envoyer une instruction à un logiciel ou à une machine.
+
+Pour être comprise (ou *"évaluée"* dans le jargon), elle doit suivre une **nomenclature** standardisée pour chaque logiciel ou langage informatique (bien que certaines nomenclatures soient largement partagées) :
+* une orthographe précise (souvent *case sensitive*) ;
+* un ordre précis dans les éléments qui la compose ;
+* une ponctuation ou délimitation précise.
+
+Sans quoi, elle renverra une ou plusieurs erreurs. Ne les négligez pas, elles vous aideront à résoudre le problème.
+
+---
+
+## Aparté : les fonctions 2/2
+
+La majorité des fonctions nécessitent des éléments de paramétrage, ou *arguments*, pour définir leurs modalités.
+
+Chaque argument est typé. C'est-à-dire qu'il est d'un type de donnée attendu (vous vous souvenez les trois types de données ?). Si le type donné est mauvais, cela déclenchera une erreur. En cas d'arguments multiples, ils sont séparés par un ";" en français et un "," en anglais. Certains arguments sont optionnels.
+
+Exemple de nomenclature :
+toutes les fontions Google Spreadsheet se présentent ainsi en français :
+=fonction(argument1[; argument2; argument3])
+
+En bash :
+fonction -option argument1 [argument2]
+
+---
+
+### =importHTML
+
+### pour l'extraction de table HTML
+
+
+Nomenclature :
+`=importHTML("url","table"[,index])`
+
+---
+
+### =importXML
+
+### pour l'extraction par "sélecteur xPath"
+
+Nomenclature :
+`=importXML("url","xPath")`
+
+
+
+---
+
+background-image: url(https://media.giphy.com/media/3o6ZsVZwQ43bTfhXOM/giphy.gif)
+class: center, top, inverse
+
+# Et rendez-vous demain pour nettoyez tout ça !
+
+---
+
+
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop)
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

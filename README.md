@@ -28,17 +28,20 @@ La session datajournalisme se déroulera du lundi 17 juin au vendredi 21 juin 20
 ## Support
 
 * Jour 1 : [introduction et data literacy](https://datactivist.coop/mediaup_ddj2019/1-intro_dataliteracy/)
-* Jour 2 : à venir
+* Jour 2 : [récupération et scraping](https://datactivist.coop/mediaup_ddj2019/2-recherche_scraping/)
 * Jour 3 : [nettoyage](https://datactivist.coop/mediaup_ddj2019/3-nettoyage/)
-* Jour 4 : à venir
-* Jour 5 : à venir
+* Jour 4 : [traitement](https://datactivist.coop/mediaup_ddj2019/4-traitement/)
+* Jour 5 : [méthodologie](https://datactivist.coop/mediaup_ddj2019/5-methodologie/) (du fait du changement de programme, cette présentation est au stade la formalisation)
 
 
 ## Bases de données utilises
 
 ### *en cours*
 
-
 ## Références
 
-### *en cours*
+* [Le Datavizcatalogue](https://datavizcatalogue.com/) offre deux approches pour choisir les graphs appropriés, soit par type de graph, soit par fonction ;
+* [La documentation de Google Charts](https://developers.google.com/chart/) offre des exemples, des détails, des galleries, etc.
+* [Le blog de Datawrapper](https://blog.datawrapper.de/), notamment alimenté par Lisa Charlotte Rost, offre des perspectives très pertinentes sur la dataviz, 
+* [The functional art](http://www.thefunctionalart.com/), le blog d'Alberto Cairo, un des piliers de la réflexion contemporaine sur la dataviz. Plein d'idées, depuis les outils jusqu'à la théorie de la perception. Parfois technique mais souvent passionnant.
+* [Visualiser les chiffres : rigueur - lecture - message](https://datactivist.coop/ensad-dataviz/index.html), la présentation que je vous ai proposé en préambule, réalisée à l'origine pour l'Ensad, avec beaucoup d'exemples illustrant des points importants de la réflexion sur la dataviz à usage journalistique.

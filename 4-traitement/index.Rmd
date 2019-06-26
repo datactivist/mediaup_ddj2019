@@ -1,0 +1,86 @@
+---
+title: "Datajournalisme (4) Traitement"
+author: "Sylvain Lapoix, Datactivist"
+date: "MediaUp - Capjc, 17-21 juin 2019"
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+params:
+  event: MediaUp - DDJ - 20/06/2019
+
+---
+
+layout: true
+  
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></center></span></div>")` 
+
+---
+
+background-image: url("https://media.giphy.com/media/euKXZIo8tGvVl9xMKY/giphy.gif")
+class: center, top, inverse
+
+# Manipuler les données
+
+---
+
+## Opérations simples
+
+Plusieurs calculs vous permettent de mettre en avant les caractéristiques d'un jeu de données. Outre les sommes (`=sum()` / `=somme()`), les opérations les plus utiles portent sur le rapport entre partie et ensemble.
+
+--
+
+#### La moyenne
+`=average()` / `=moyenne()`
+
+La moyenne permet de se concentrer sur la production d'un ensemble plutôt que sur ses parties. **La moyenne lisse une caractéristique sur une population**.
+
+--
+
+#### La médiane (et les tantièmes)
+`=median()` / `=mediane()`
+
+La médiane permet de se concentrer sur les disparités à l'intérieur d'un ensemble. **La médiane se concentre sur les individus et les groupes**.
+
+--
+
+Ex. : [les salaires dans le secteur privé pour l'Insee](https://www.insee.fr/fr/statistiques/3135908).
+
+---
+
+## Croisement de données
+
+L'analyse d'une base de données peut nécessiter une manipulation plus avancée. Notamment pour faire deux choses :
+* dénombrer des données non numériques. Par ex. : le nombre de chaque réponse à une même question ;
+* identfier les groupes par valeur. Par ex. : quels sont les revenus des personnes de telle catégorie au sein d'un groupe ?.
+
+--
+
+
+Les tableurs proposent tous un outils d'édition : les "tableaux croisés" (ou "table de pilote", "pivot table", "pivot table report"). Cet outil vous permet de :
+* manipuler les différentes variables d'une base de données (*Rows* et *Columns*) ;
+* choisir les valeurs à prendre en compte (*Filtrer*) ;
+* les opérations que vous souhaitez réaliser (*Values*).
+
+---
+
+background-image: url(https://media.giphy.com/media/3o7TKFHSE53PbHMyTm/giphy.gif)
+class: center, top, inverse
+
+## Reposez-vous bien : demain, on récapitule toute la semaine et on applique !
+
+---
+
+
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop)
+
+

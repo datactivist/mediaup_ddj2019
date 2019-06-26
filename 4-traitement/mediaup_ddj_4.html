@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Datajournalisme (4) Traitement</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Sylvain Lapoix, Datactivist" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Datajournalisme (4) Traitement
+### Sylvain Lapoix, Datactivist
+### MediaUp - Capjc, 17 au 21 juin 2019
+
+---
+
+
+layout: true
+  
+
+&lt;div class='my-footer'&gt;&lt;span&gt;MediaUp - DDJ - 20/06/2019&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
+
+---
+
+class: inverse, center, middle
+
+# 4. Traitement
+
+
+---
+
+background-image: url("https://media.giphy.com/media/euKXZIo8tGvVl9xMKY/giphy.gif")
+class: center, top, inverse
+
+# Manipuler les données
+
+---
+
+## préparer ses données pour la bataille
+
+---
+
+### Faire parler les données : opérations simples
+
+Plusieurs calculs vous permettent de mettre en avant les caractéristiques d'un jeu de données. Outre les sommes (`=sum()` / `=somme()`), les opérations les plus utiles portent sur le rapport entre partie et ensemble.
+
+--
+
+#### La moyenne
+`=average()` / `=moyenne()`
+
+La moyenne permet de se concentrer sur la production d'un ensemble plutôt que sur ses parties. **La moyenne lisse une caractéristique sur une population**.
+
+--
+
+#### La médiane (et les tantièmes)
+`=median()` / `=mediane()`
+
+La médiane permet de se concentrer sur les disparités à l'intérieur d'un ensemble. **La médiane se concentre sur les individus et les groupes**.
+
+--
+
+Ex. : [les salaires dans le secteur privé pour l'Insee](https://www.insee.fr/fr/statistiques/3135908).
+
+---
+
+## Faire parler les données : croisement de données
+
+L'analyse d'une base de données peut nécessiter une manipulation plus avancée. Notamment pour faire deux choses :
+* dénombrer des données non numériques. Par ex. : le nombre de chaque réponse à une même question ;
+* identfier les groupes par valeur. Par ex. : quels sont les revenus des personnes de telle catégorie au sein d'un groupe ?.
+
+--
+
+.pull-left[Les tableurs proposent tous un outils d'édition : les "tableaux croisés" (ou "table de pilote", "pivot table", "pivot table report"). Cet outil vous permet de :
+* manipuler les différentes variables d'une base de données (*Rows* et *Columns*) ;
+* choisir les valeurs à prendre en compte (*Filtrer*) ;
+* les opérations que vous souhaitez réaliser (*Values*).]
+
+.pull-right[![](./img/PivotTable.png)]
+
+
+---
+
+## tableaux croisés dynamiques
+
+---
+
+## filtrer = se concentrer
+
+---
+
+## trier = ordonner
+
+
+---
+
+background-image: url(https://media.giphy.com/media/3o7TKFHSE53PbHMyTm/giphy.gif)
+class: center, top, inverse
+
+# Reposez-vous bien : demain, on récapitule toute la semaine et on applique !
+
+---
+
+
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop)
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

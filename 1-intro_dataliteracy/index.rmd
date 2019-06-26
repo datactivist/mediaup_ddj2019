@@ -1,5 +1,5 @@
 ---
-title: "Formation de formateurs Datajournalisme"
+title: "Datajournalisme (1) Introduction et data literacy"
 author: "Sylvain Lapoix, Datactivist"
 date: "MediaUp - Capjc, 17 au 21 juin 2019"
 output:
@@ -11,7 +11,7 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 params:
-  event: MediaUp - DDJ - 17-21/06/2019
+  event: MediaUp - DDJ - 17/06/2019
 
 ---
 

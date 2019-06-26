@@ -1,0 +1,150 @@
+---
+title: "Datajournalisme (5) Méthodologie"
+author: "Sylvain Lapoix, Datactivist"
+date: "MediaUp - Capjc, 17 au 21 juin 2019"
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+params:
+  event: MediaUp - DDJ - 21/06/2019
+
+---
+
+layout: true
+  
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></center></span></div>")` 
+
+---
+
+
+background-image: url("https://media.giphy.com/media/fVeAI9dyD5ssIFyOyM/giphy.gif")
+class: center, top, inverse
+
+# Construire une méthodologie
+
+
+
+---
+
+
+background-image: url("https://media.giphy.com/media/12QASni5AUN1SM/giphy.gif")
+class: center, top, inverse
+
+## &#9888; Mise en garde &#9888;
+#### Du fait du changement de programme, cette présentation est en cours de formalisation. Veuillez nous excuser pour la gêne occasionnée.
+
+---
+
+
+# Techniques de base
+
+* savoir où on enregistre son fichier
+* organiser ses sources, outils et fichiers
+* nommer TOUS ses fichiers
+
+---
+
+# 1. Récupération
+
+### Importer des formats tabulaires
+
+* comment ouvrir un CSV dans Excel ?
+* comment importer un fichier dans Google Drive / Sheets ?
+	* glisser/déposer
+	* importer via l'interface
+	* importer depuis un fichier existant
+
+---
+
+### Importer des formats non tabulaires
+
+### PDF-text
+
+* comment savoir si c'est un PDF-text ?
+* comment extraire les tableaux d'un PDF-text avec Tabula ?
+	! si tabula ne s'ouvre pas, allez à l'adresse locale :
+	127.0.0.1:8080
+
+### Page web (HTML)
+
+* comment extraire une table-HTML d'une page web ?
+
+---
+
+# 2. Nettoyage
+
+### OpenRefine
+
+* importer un fichier dans OpenRefine
+	1. bon format de fichier ;
+	2. bon encodage ;
+	3. bonnes têtières ;
+	4. nom du projet ;
+	5. "Créer le projet".
+
+* comment supprimer un signe ?
+* comment appliquer une modification à tout le tableau d'un coup ?
+
+---
+
+## Google Sheets
+
+* supprimer les lignes inutiles
+* supprimer un signe en trop
+
+---
+
+# 3. Traitement
+Avec Google Sheets.
+
+### Confort de lecture
+
+* geler une ligne / une colonne
+* PRO-TIP : sélectionner une colonne jusqu'à la fin =sum(I3:I)
+* incrémenter une formule
+
+---
+
+## Calculs de base avec Google Sheets
+
+### Opérations simples
+* faire une somme / une moyenne / une médiane
+* faire une somme globale
+* calculer une différence
+
+### Evolutions
+* calculer une évolution à n+1
+* calculer une évolution suivant un point de référence fixe
+
+---
+
+# 4. Datavisualisation
+
+### Camembert / Pie chart
+2 données en entrée :
+1. données numériques constitutives d'un ensemble ;
+2. libellés.
+
+---
+
+background-image: url(https://media.giphy.com/media/3o6Zt0bP8W03YzJfMs/giphy.gif)
+class: center, top, inverse
+
+# Et cette fois-ci, c'est vraiment la fin !
+
+---
+
+
+class: inverse, center, middle
+
+# Merci à tou·te·s pour votre participation !
+
+Contact : [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop)
+
+

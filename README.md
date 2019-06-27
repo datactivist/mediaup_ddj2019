@@ -28,10 +28,10 @@ La session datajournalisme se déroulera du lundi 17 juin au vendredi 21 juin 20
 | Jour | Thématique | Méthodes | Outils  |
 | :-----: | ----- | ----- | -----: |
 | 17/06/2019 | Culture de la donnée | Identification des sources, structure de données | #N/A  |
-| 18/06/2019 | Recherce et scraping | Recherche avancée sur Google, PDF-scraping, web-scraping | Google Sheets, Tabula |
+| 18/06/2019 | Recherche et scraping | Recherche avancée sur Google, PDF-scraping, web-scraping | Google Sheets, Tabula |
 | 19/06/2019 | Nettoyage | Nettoyage de BDD, normalisation des valeurs, extraction de valeurs | Google Sheets, OpenRefine |
 | 20/06/2019 | Traitement | Opérations simples, opérations globales, tableaux croisés dynamiques | Google Sheets |
-| 21/06/2019 | Méthodologie | Organisation du travail datajournalistique | Sublime Text |
+| 21/06/2019 | Méthodologie | Dataviz et organisation du travail datajournalistique | Google Sheets, DataWrapper |
 
 
 ------

@@ -14,6 +14,7 @@ La session datajournalisme se déroulera du lundi 17 juin au vendredi 21 juin 20
 * M.	Majdi	DRAOUIL
 * M.	Meher	HAJBI
 * Mme	Melika	JABBERI
+* M.  Mohamed Khalil JELASSI
 * M.	Mohamed Sami	KECHAOU
 * M.	Mohamed	MDALLA
 * M.	Amine	MILADI
@@ -21,6 +22,7 @@ La session datajournalisme se déroulera du lundi 17 juin au vendredi 21 juin 20
 * Mme	Imen	RIAHI
 * M.	Riadh	SEKMA
 * Mme	Houda	ZAGHDOUDI
+
 
 ## Programme
 
